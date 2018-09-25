@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "demo",
+            "invocationName": "sumo san",
             "intents": [
                 {
                     "name": "AMAZON.CancelIntent",
@@ -21,10 +21,14 @@
                         {
                             "name": "phrase",
                             "type": "phrase"
+                        },
+                        {
+                            "name": "projectcode",
+                            "type": "AMAZON.NUMBER"
                         }
                     ],
                     "samples": [
-                        "{phrase}"
+                        "{phrase} "
                     ]
                 }
             ],
@@ -32,6 +36,11 @@
                 {
                     "name": "phrase",
                     "values": [
+                        {
+                            "name": {
+                                "value": " GetUserIntent asdf {projectcode}"
+                            }
+                        },
                         {
                             "name": {
                                 "value": "GetUserIntent asdf {phrase}"
