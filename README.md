@@ -200,3 +200,5 @@ Alternatively you can do this using the Azure portal. One thing I did find is th
 The key thing is that once the app is deployed to the app service you need to go to application settings and load the values from the .env file into the app settings panel.
 
 You may also need to regenerate the npm packages on the server using [Kudu](https://github.com/projectkudu/kudu/) navigate to https://*****.scm.azurewebsites.net (where ***** is the name of your Web App) and running npm install against the Debug console / CMD / site / wwwroot directory. 
+
+Test Commit
